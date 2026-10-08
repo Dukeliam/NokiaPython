@@ -21,10 +21,10 @@ while(decision):
                      """
     print(main_menu)
 
-    main = int(input("Enter number: "))
+    main = input("Enter number: ")
 
     match main:
-        case 1:
+        case '1':
             print("PhoneBook")
 
             decision_one = True
@@ -45,35 +45,35 @@ while(decision):
                        """
                 print(phone_book)
 
-                choice_one = int(input("Enter number: "))
+                choice_one = input("Enter number: ")
 
 
                 match choice_one:
-                    case 1: 
+                    case '1': 
                          print("Search")
 
-                    case 2: 
+                    case '2': 
                          print("Services Nos")
 
-                    case 3:
+                    case '3':
                          print("Add name")
                                
-                    case 4: 
+                    case '4': 
                          print("Erase")
                                 
-                    case 5:
+                    case '5':
                          print("Edit")
                                 
-                    case 6: 
+                    case '6': 
                          print("Copy")
                                 
-                    case 7: 
+                    case '7': 
                          print("Assign tone")
                                 
-                    case 8:
+                    case '8':
                          print("Send b card")
                                                                     
-                    case 9: 
+                    case '9': 
                          print("Options")
 
                          decision_two = True
@@ -86,39 +86,39 @@ while(decision):
                                     """ 
                              print(options)
                              
-                             choice_one = int(input("Enter number: "))
+                             choice_one = input("Enter number: ")
                                         
                                                                         
                              match choice_one:
-                                    case 1: 
+                                    case '1': 
                                          print("Memory in use")
                                            
-                                    case 2: 
+                                    case '2': 
                                          print("Type of veiw")
                                             
-                                    case 3: 
+                                    case '3': 
                                          print("Memory status")
 
-                                    case 0: 
+                                    case '4': 
                                          decision_two = False
                                             
                                     case _: 
                                          print("Invalid")
                                                                    
 
-                    case 10: 
+                    case '10': 
                          print("Speed dials")
                                 
-                    case 11: 
+                    case '11': 
                          print("Voice tags")
 
-                    case 0:
+                    case '0':
                          decision_one = False
                                 
                     case _: 
                         print("Invalid")
                             
-        case 2: 
+        case '2': 
             print("Messages")
                 
             decision_three = True
@@ -138,28 +138,28 @@ while(decision):
                        """
                 print(messages)
 
-                choice_three = int(input("Enter number: "))
+                choice_three = input("Enter number: ")
                                   
                 match choice_three:
-                    case 1: 
+                    case '1': 
                          print("Write messages")
 
-                    case 2:
+                    case '2':
                          print("Inbox")
 
-                    case 3: 
+                    case '3': 
                          print("Outbox")
 
-                    case 4:
+                    case '4':
                          print("Picture messages")
 
-                    case 5:
+                    case '5':
                          print("Templates")
 
-                    case 6:
+                    case '6':
                          print("Smileys")
 
-                    case 7:
+                    case '7':
                          print("Messages settings")
 
                          decision_four = True
@@ -171,10 +171,10 @@ while(decision):
                                       """
                              print(settings)      
 
-                             decision_one = int(input("Enter number: "))
+                             decision_one = input("Enter number: ")
                                     
                              match decision_one:
-                                case 1: 
+                                case '1': 
                                     print("Set")
 
                                     decision_five = True
@@ -187,20 +187,20 @@ while(decision):
                                                     """
                                         print(setting)
 
-                                        decision_two = int(input("Enter number: "))
+                                        decision_two = input("Enter number: ")
 
                                         match decision_two:
-                                             case 1: print("Message centre number")
+                                             case '1': print("Message centre number")
 
-                                             case 2: print("Message sent as")
+                                             case '2': print("Message sent as")
 
-                                             case 3: print("Message validity")
+                                             case '3': print("Message validity")
 
-                                             case 0: decision_five = False
+                                             case '0': decision_five = False
 
                                              case _: print("Invalid")
                                              
-                                case 2: 
+                                case '2': 
                                     print("Common")
 
                                     choice_zero = True
@@ -216,37 +216,37 @@ while(decision):
                                         decision_three = int(input("Enter number: "))
 
                                         match decision_three:
-                                            case 1: print("Delivery reports")
+                                            case '1': print("Delivery reports")
 
-                                            case 2: print("Reply via same centre")
+                                            case '2': print("Reply via same centre")
 
-                                            case 3: print("Character support")
+                                            case '3': print("Character support")
 
-                                            case 0: choice_zero = False
+                                            case '0': choice_zero = False
 
                                             case _: print("Invalid")
 
-                                case 0:                                            
+                                case '0':                                            
                                     decision_four = False
                                                 
                                 case _: 
                                     print("Invalid")
                             
                         
-                    case 8: print("Info service")
+                    case '8': print("Info service")
 
-                    case 9: print("Voice mailbox number")
+                    case '9': print("Voice mailbox number")
 
-                    case 10: print("Service command editor")
+                    case '10': print("Service command editor")
 
-                    case 0: decision_three = False
+                    case '0': decision_three = False
 
                     case _: print("Invalid")
 
-        case 3: 
+        case '3': 
             print("Chat")               
 
-        case 4:
+        case '4':
              print("Call register")
 
              menu_choice = True
@@ -264,22 +264,22 @@ while(decision):
                             """
                  print(register)
 
-                 call = int(input("Enter number: "))
+                 call = input("Enter number: ")
 
                  match call:
-                            case 1: 
+                            case '1': 
                                 print("Missed calls")
 
-                            case 2: 
+                            case '2': 
                                 print("Received calls")
 
-                            case 3: 
+                            case '3': 
                                 print("Dialled numbers")
 
-                            case 4: 
+                            case '4': 
                                 print("Erase recent call lists");
 
-                            case 5: 
+                            case '5': 
                                 print("Show call duration")
 
                                 option_one = True
@@ -295,31 +295,31 @@ while(decision):
                                     print(show)
 
 
-                                    duration = int(input("Enter number: "))
+                                    duration = input("Enter number: ")
 
                                     match duration:
-                                        case 1: 
+                                        case '1': 
                                             print("Last call duration")
 
-                                        case 2: 
+                                        case '2': 
                                             print("All calls duration")
 
-                                        case 3: 
+                                        case '3': 
                                             print("Received calls duration")
 
-                                        case 4: 
+                                        case '4': 
                                             print(" Dailled calls duration")
 
-                                        case 5: 
+                                        case '5': 
                                             print(" Clears timers")
 
-                                        case 0:
+                                        case '0':
                                             option_one = False
 
                                         case _: 
                                             print("Invalid")
                                 
-                            case 6: 
+                            case '6': 
                                 print("Show call costs")
 
                                 option_two = True
@@ -332,25 +332,25 @@ while(decision):
                                                  """
                                     print(cost)
 
-                                    counters = int(input("Enter number: "))
+                                    counters = input("Enter number: ")
 
                                     match counters:
-                                        case 1: 
+                                        case '1': 
                                             print("Last call cost")
 
-                                        case 2: 
+                                        case '2': 
                                             print("All calls cost")
 
-                                        case 3: 
+                                        case '3': 
                                             print("Clear counters")
 
-                                        case 0:
+                                        case '0':
                                             option_two = False
 
                                         case _: 
                                             print("Invalid")
                                           
-                            case 7: 
+                            case '7': 
                                 print("Call cost setting")
 
                                 option_three = True
@@ -362,31 +362,31 @@ while(decision):
                                               """
                                     print(call_cost)
 
-                                    limit = int(input("Enter number: "))
+                                    limit = input("Enter number: ")
               
                                     match limit:
-                                        case 1:
+                                        case '1':
                                             print("Call cost limit")
 
-                                        case 2:
+                                        case '2':
                                             print("Show costs in")
 
-                                        case 0:
+                                        case '0':
                                             option_three = False
 
                                         case _:
                                             print("Invalid")           
                                  
-                            case 8: 
+                            case '8': 
                                 print("Prepaid credit")
 
-                            case 0:
+                            case '0':
                                 menu_choice = False
 
                             case _:
                                 print("Invalid")  
 
-        case 5: 
+        case '5': 
             print("Tones")
 
             option_four = True
@@ -405,43 +405,43 @@ while(decision):
                         """
                 print(tone)
 
-                alert = int(input("Enter number: "))
+                alert = input("Enter number: ")
 
                 match alert:
-                    case 1: 
+                    case '1': 
                         print("Ringing tone")
 
-                    case 2: 
+                    case '2': 
                         print("Ringing volume")
 
-                    case 3: 
+                    case '3': 
                         print("Incoming call alert")
 
-                    case 4: 
+                    case '4': 
                         print("Computer")
 
-                    case 5: 
+                    case '5': 
                         print("Message alert tone")
 
-                    case 6: 
+                    case '6': 
                         print("Keypad tones")
 
-                    case 7: 
+                    case '7': 
                         print("Warning and game tones")
 
-                    case 8: 
+                    case '8': 
                         print("Vibrating alert")
 
-                    case 9: 
+                    case '9': 
                         print("Screen saver")
 
-                    case 0: 
+                    case '0': 
                         option_four = False
 
                     case _: 
                         print("Invalid")
 
-        case 6: 
+        case '6': 
             print("Settings")
 
             option_five = True
@@ -455,7 +455,7 @@ while(decision):
                                     """
                 print(security)
 
-                factory = int(input("Enter number: "))
+                factory = input("Enter number: ")
                                
                 match factory:
                     case '1': 
@@ -642,45 +642,40 @@ while(decision):
         case '12':
              print("Clock")
 
-             decision_ten = True
-             while(decision_ten):
-                 clock = """
-                            1. Alarm clock
-                            2. Clock settings
-                            3. Date setting
-                            4. Stopwatch
-                            5. Countdown timer
-                            6. Auto update of date and time
-                            0. Return
-                              """
-                 print(clock)
+             clock = """
+                      1. Alarm clock
+                      2. Clock settings
+                      3. Date setting
+                      4. Stopwatch
+                      5. Countdown timer
+                      6. Auto update of date and time
+                      0. Return
+                        """
+             print(clock)
 
-                 watch = input("Enter number: ")
+             watch = input("Enter number: ")
 
-                 match watch:
-                     case '1': 
-                        print("Alarm clock")
+             match watch:
+                 case '1': 
+                    print("Alarm clock")
 
-                     case '2':
-                        print("Clock settings")
+                 case '2':
+                    print("Clock settings")
 
-                     case '3':
-                        print("Date setting")
+                 case '3':
+                    print("Date setting")
 
-                     case '4':
-                        print("Stopwatch")
+                 case '4':
+                    print("Stopwatch")
 
-                     case '5':
-                        print("Countdown timer")
+                 case '5':
+                    print("Countdown timer")
 
-                     case '6':
-                        print("Auto update of date and time")
+                 case '6':
+                    print("Auto update of date and time")
 
-                     case '0':
-                        decision_ten = False
-
-                     case _:
-                        print("Invalid")
+                 case _:
+                    print("Invalid")
 
 
         case '13':
